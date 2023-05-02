@@ -77,6 +77,7 @@ List* get_adj_nodes(Node* n){
     for (size_t k=1;k<9;k++)
     {
         Node* nodo=copy(n);
+        nodo->sudo[i][j]=k;
             
     }
     return list;
