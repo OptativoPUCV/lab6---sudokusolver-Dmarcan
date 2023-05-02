@@ -75,7 +75,7 @@ La salida del código con el estado de la figura es (submatriz del centro):
 
 int is_valid(Node* n){
 
-    return 1;
+    return 0;
 }
 /*
 1.Cree una función que a partir de un nodo genere una **lista con los nodos adyacentes**:
@@ -111,7 +111,6 @@ List* get_adj_nodes(Node* n){
             Node* nodo=copy(n);
             nodo->sudo[i][j]=k;
             pushBack(list,nodo);
-            
         }
             
     }
