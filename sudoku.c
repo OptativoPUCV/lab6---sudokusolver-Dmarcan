@@ -42,6 +42,36 @@ void print_node(Node* n){
     }
     printf("\n");
 }
+/*
+Cree la función **int is_valid(Node * n)**, para validar si un estado/nodo es válido (cumple con las restricciones del problema). Debe validar que:
+
+- No se repitan números en las filas
+- No se repitan números en las columnas
+- No se repitan números en las submatrices de 3x3
+
+Si el estado es válido la función retorna 1, si no lo es retorna 0.
+
+> Para marcar los números que vayan apareciendo en una fila/columna/submatriz puede usar un arreglo de enteros de largo 10 inicializado con 0s. Cada vez que aparezca un número i, verifique que la casilla i del arreglo sea igual a 0, luego márquela con un '1'. Si la casilla es '1' quiere decir que el número ya estaba marcado por lo que la fla/columna/submatriz no es válida.
+
+----
+**¿Cómo recorrer las submatrices de 3x3?**
+El siguiente código se puede usar para recorrer los elementos de una sumbatriz k (por ejemplo k=4):
+
+    int k=4,p; 
+    for(p=0;p<9;p++){
+        int i=3*(k/3) + (p/3) ;
+        int j=3*(k%3) + (p%3) ;
+        printf("%d ",nodo->sudo[i][j]);
+        if(p%3 == 2) printf("\n");
+    }
+
+La salida del código con el estado de la figura es (submatriz del centro):
+    
+    0 6 0
+    8 0 3
+    0 2 0
+
+-----*/
 
 int is_valid(Node* n){
 
@@ -76,9 +106,13 @@ List* get_adj_nodes(Node* n){
     }
     for (size_t k=1;k<9;k++)
     {
-        Node* nodo=copy(n);
-        nodo->sudo[i][j]=k;
-        pushBack(list,nodo);
+        if(is_valid(nodo))
+        {
+            Node* nodo=copy(n);
+            nodo->sudo[i][j]=k;
+            pushBack(list,nodo);
+            
+        }
             
     }
     return list;
