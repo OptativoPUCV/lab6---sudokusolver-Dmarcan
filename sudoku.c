@@ -67,10 +67,12 @@ Recuerde que los nodos adyacentes son generados aplicando las acciones al estado
 
 List* get_adj_nodes(Node* n){
     List* list=createList();
-    int i;
-    for (i=0;i<n;i++)
+    size_t i,j;
+    for (i=0;i < 9;i++)
     {
-            
+        for(j=0;j<9;j++)
+            if(n->sudo[i][j] == 0)break;
+        if(n->sudo[i][j] == 0)break; 
     }
     return list;
 }
