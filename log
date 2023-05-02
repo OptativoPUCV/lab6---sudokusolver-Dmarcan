@@ -8,3 +8,14 @@ Tue 02 May 2023 10:33:49 PM UTC:
  tests:  0|5
 total_score: 0/70
 e93bc0c
+Tue 02 May 2023 10:36:18 PM UTC: 
+ sudoku.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:71:15: error: comparison between pointer and integer [-Werror]
+   71 |     for (i=0;i<n;i++)
+      |               ^
+cc1: all warnings being treated as errors
+Compilation failed
+b05c4ce
