@@ -194,3 +194,9 @@ sudoku.c:79:9: note: ‘columnas’ declared here
 cc1: all warnings being treated as errors
 Compilation failed
 c2139f6
+Thu 04 May 2023 10:11:24 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  5|3
+total_score: 35/70
+5dcac8a
