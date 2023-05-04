@@ -261,3 +261,17 @@ Thu 04 May 2023 10:29:20 PM UTC:
  tests:  5|3
 total_score: 35/70
 51055d2
+Thu 04 May 2023 10:29:59 PM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:103:13: error: ‘else’ without a previous ‘if’
+  103 |             else subMatriz[n->sudo[i][j]]=1;
+      |             ^~~~
+sudoku.c:95:13: error: variable ‘subMatriz’ set but not used [-Werror=unused-but-set-variable]
+   95 |         int subMatriz[10]={0};
+      |             ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+57f88c2
