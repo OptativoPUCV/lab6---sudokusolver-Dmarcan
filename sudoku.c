@@ -75,10 +75,6 @@ La salida del código con el estado de la figura es (submatriz del centro):
 
 int is_valid(Node* n){
     size_t i,j;
-    //int filas[10]={0};
-    //int columnas[10]={0};
-    //int subMatrices[10]={0};
-    
     for (i=0;i<9;i++)
     {
         int filas[10]={0};
@@ -92,18 +88,22 @@ int is_valid(Node* n){
             if(n->sudo[j][i]!=0 && columnas[n->sudo[j][i]]==1)return 0;
             else columnas[n->sudo[j][i]]=1;
         }
-        // soy tonto tonto tontontotnotnto
-        //int filas[10]={0};
-        //int columnas[10]={0};
-        /*
-        for (int k=0;k<10;k++)
-        {
-            filas[k]=0;
-            columnas[k]=0;    
-        }*/
-        
-            
     }
+    /*
+    for (int k=0;k<9;k++)
+    {
+        int subMatriz[10]={0};
+        for(int p=0;p<9;p++)
+        {
+            int i=3*(k/3) + (p/3) ;
+            int j=3*(k%3) + (p%3) ;
+            //printf("%d ",nodo->sudo[i][j]);
+            //if(p%3 == 2) printf("\n");
+            if(n->sudo[i][j]!=0 && subMatriz[n->sudo[i][j]]==1)return 0;
+        }
+        
+    }
+    */
     return 1;
 }
 /*
