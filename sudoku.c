@@ -91,12 +91,14 @@ int is_valid(Node* n){
             else columnas[n->sudo[j][i]]=1;
         }
         // soy tonto tonto tontontotnotnto
-        
+        int filas[10]={0};
+        int columnas[10]={0};
+        /*
         for (int k=0;k<10;k++)
         {
             filas[k]=0;
             columnas[k]=0;    
-        }
+        }*/
         
             
     }
