@@ -90,6 +90,11 @@ int is_valid(Node* n){
             if(n->sudo[j][i]!=0 && columnas[n->sudo[j][i]]==1)return 0;
             else columnas[n->sudo[j][i]]=1;
         }
+        for (int k=0;k<10;k++)
+        {
+            filas[k]=0;
+            columnas[k]=0;    
+        }
             
     }
     return 1;
