@@ -89,7 +89,7 @@ int is_valid(Node* n){
             else columnas[n->sudo[j][i]]=1;
         }
     }
-    /*
+    
     for (int k=0;k<9;k++)
     {
         int subMatriz[10]={0};
@@ -100,10 +100,11 @@ int is_valid(Node* n){
             //printf("%d ",nodo->sudo[i][j]);
             //if(p%3 == 2) printf("\n");
             if(n->sudo[i][j]!=0 && subMatriz[n->sudo[i][j]]==1)return 0;
+            else subMatriz[n->sudo[i][j]]=1;
         }
         
     }
-    */
+    
     return 1;
 }
 /*
