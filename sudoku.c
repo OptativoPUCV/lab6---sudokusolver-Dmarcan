@@ -86,8 +86,8 @@ int is_valid(Node* n){
             if (n->sudo[i][j]!=0 && filas[n->sudo[i][j]]==1) return 0;
             else filas[n->sudo[i][j]]=1;
             //validar columna
-            if(n->sudo[i][j]!=0 && columnas[n->sudo[i][j]]==1)return 0;
-            else columnas[n->sudo[i][j]]=1;
+            if(n->sudo[j][i]!=0 && columnas[n->sudo[j][i]]==1)return 0;
+            else columnas[n->sudo[j][i]]=1;
         }
             
     }
