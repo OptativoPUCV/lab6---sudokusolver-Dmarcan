@@ -168,3 +168,29 @@ Thu 04 May 2023 10:11:11 PM UTC:
  tests:  0|5
 total_score: 0/70
 90295b3
+Thu 04 May 2023 10:11:18 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘is_valid’:
+sudoku.c:96:21: error: iteration 10 invokes undefined behavior [-Werror=aggressive-loop-optimizations]
+   96 |             filas[k]=0;
+      |             ~~~~~~~~^~
+sudoku.c:94:23: note: within this loop
+   94 |         for (int k=0;k<11;k++)
+      |                      ~^~~
+sudoku.c:96:21: error: ‘__builtin_memset’ forming offset [40, 43] is out of the bounds [0, 40] of object ‘filas’ with type ‘int[10]’ [-Werror=array-bounds]
+   96 |             filas[k]=0;
+      |             ~~~~~~~~^~
+sudoku.c:78:9: note: ‘filas’ declared here
+   78 |     int filas[10]={0};
+      |         ^~~~~
+sudoku.c:97:24: error: ‘__builtin_memset’ forming offset [40, 43] is out of the bounds [0, 40] of object ‘columnas’ with type ‘int[10]’ [-Werror=array-bounds]
+   97 |             columnas[k]=0;
+      |             ~~~~~~~~~~~^~
+sudoku.c:79:9: note: ‘columnas’ declared here
+   79 |     int columnas[10]={0};
+      |         ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c2139f6
