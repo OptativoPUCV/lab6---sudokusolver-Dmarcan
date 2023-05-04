@@ -75,9 +75,10 @@ La salida del código con el estado de la figura es (submatriz del centro):
 
 int is_valid(Node* n){
     size_t i,j;
-    int filas[10]={0};
-    int columnas[10]={0};
+    //int filas[10]={0};
+    //int columnas[10]={0};
     //int subMatrices[10]={0};
+    /*
     for (i=0;i<9;i++)
     {
         for (j=0;j<9;j++)
@@ -91,7 +92,7 @@ int is_valid(Node* n){
         }
             
     }
-    
+    */
     return 1;
 }
 /*
