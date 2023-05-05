@@ -430,3 +430,9 @@ sudoku.c:151:21: error: format ‘%i’ expects argument of type ‘int’, but 
 cc1: all warnings being treated as errors
 Compilation failed
 3c23bc6
+Fri 05 May 2023 02:49:14 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|3
+total_score: 40/70
+68b0df9
