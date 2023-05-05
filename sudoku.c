@@ -210,8 +210,8 @@ Node* DFS(Node* initial, int* cont){
         {
             return current;
         }
-        List* lista=get_adj_nodes(current);
-        for(Node*  primero=first(lista);primero!=NULL;primero=next(lista))
+        List* listaa=get_adj_nodes(current);
+        for(Node*  primero=first(listaa);primero!=NULL;primero=next(listaa))
         {
             push(pila,primero);
             
@@ -224,7 +224,7 @@ Node* DFS(Node* initial, int* cont){
             primero=next(lista);
         }
         */
-        //free(current);
+        free(current);
         (*cont)++;
     }
     
