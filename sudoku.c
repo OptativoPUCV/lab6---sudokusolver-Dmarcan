@@ -143,6 +143,7 @@ List* get_adj_nodes(Node* n){
                         pushBack(list,nodo);
                     }   
                 }
+                return list;
             }
         }
         
