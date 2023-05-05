@@ -193,7 +193,7 @@ Node* DFS(Node* initial, int* cont){
         }
         printf("%i\n",*cont);
         pop(pila);
-        if(is_final(current)==1)
+        if(is_final(current)==0)
         {
             return current;
         }
