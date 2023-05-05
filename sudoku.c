@@ -184,6 +184,7 @@ Node* DFS(Node* initial, int* cont){
         Node* current=top(pila);
         pop(pila);
         printf("lol\n");
+         return current;
         if(is_final(current)==1)
         {
             return current;
