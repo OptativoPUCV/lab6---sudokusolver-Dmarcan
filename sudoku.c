@@ -183,16 +183,15 @@ Node* DFS(Node* initial, int* cont){
     {
         Node* current=top(pila);
         pop(pila);
+        printf("lol\n");
         if(is_final(current)==1)
         {
-            printf("lol\n");
             return current;
         }
         List* lista=get_adj_nodes(current);
         Node* primero=first(lista);
         while(primero!=NULL)
         {
-            printf("fnafj");
             push(pila,primero);
             primero=next(lista);
         }
