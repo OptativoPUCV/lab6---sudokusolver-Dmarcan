@@ -191,6 +191,7 @@ Node* DFS(Node* initial, int* cont){
         Node* primero=first(lista);
         while(primero!=NULL)
         {
+            printf("fnafj");
             push(pila,primero);
             primero=next(lista);
         }
