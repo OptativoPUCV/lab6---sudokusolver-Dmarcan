@@ -225,6 +225,7 @@ Node* DFS(Node* initial, int* cont){
             primero=next(lista);
         }
         */
+        free(listaa);
         free(current);
         (*cont)++;
     }
