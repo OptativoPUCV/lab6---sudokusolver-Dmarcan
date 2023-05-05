@@ -147,7 +147,14 @@ List* get_adj_nodes(Node* n){
 /*4.Implemente la función **int is_final(Node * n)**. Esta función retorna 1 si el nodo corresponde a un nodo final (es decir, todos los valores de la matriz son distintos a 0) y 0 en caso contrario.
 */
 int is_final(Node* n){
-    return 0;
+    for (int i=0;i<9;i++)
+    {
+        for (int j=0;j<0;j++)
+        {
+            if (n->sudo[i][j]==0)return 0; 
+        }     
+    }
+    return 1;
 }
 
 Node* DFS(Node* initial, int* cont){
