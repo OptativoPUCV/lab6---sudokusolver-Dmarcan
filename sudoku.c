@@ -81,10 +81,9 @@ int is_valid(Node* n){
         int columnas[10]={0};
         for (j=0;j<9;j++)
         {
-            //validando fila
             if (n->sudo[i][j]!=0 && filas[n->sudo[i][j]]==1) return 0;
             else filas[n->sudo[i][j]]=1;
-            //validar columna
+            
             if(n->sudo[j][i]!=0 && columnas[n->sudo[j][i]]==1)return 0;
             else columnas[n->sudo[j][i]]=1;
         }
