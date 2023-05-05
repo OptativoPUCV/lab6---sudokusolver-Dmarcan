@@ -216,6 +216,7 @@ Node* DFS(Node* initial, int* cont){
             push(pila,primero);
             primero=next(lista);
         }
+        (*cont)++;
     }
     return NULL;
 }
