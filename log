@@ -554,3 +554,14 @@ Fri 05 May 2023 03:02:02 AM UTC:
  tests:  7|2
 total_score: 50/70
 f23cba9
+Fri 05 May 2023 03:02:18 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_final’:
+sudoku.c:151:32: error: ‘j’ undeclared (first use in this function)
+  151 |     { printf("%i\n",n->sudo[i][j]);
+      |                                ^
+sudoku.c:151:32: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+ce98252

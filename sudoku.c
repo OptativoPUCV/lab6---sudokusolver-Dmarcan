@@ -148,7 +148,7 @@ List* get_adj_nodes(Node* n){
 */
 int is_final(Node* n){
     for (int i=0;i<9;i++)
-    {
+    { printf("%i\n",n->sudo[i][j]);
         for (int j=0;j<0;j++)
         {
             printf("%i\n",n->sudo[i][j]);
