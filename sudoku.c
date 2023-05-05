@@ -161,6 +161,7 @@ List* get_adj_nodes(Node* n){
             nodo->sudo[i][j]=k;
             pushBack(list,nodo);
         }
+        else free(nodo);
             
     }
     return list;
