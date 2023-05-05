@@ -155,10 +155,12 @@ List* get_adj_nodes(Node* n){
     }
     for (size_t k=1;k<9;k++)
     {
+        Node* nodo=copy(n);
+        nodo->sudo[i][j]=k;
         if(is_valid(n))
         {
-            Node* nodo=copy(n);
-            nodo->sudo[i][j]=k;
+            //Node* nodo=copy(n);
+            //nodo->sudo[i][j]=k;
             pushBack(list,nodo);
         }
         else free(nodo);
