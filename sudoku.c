@@ -134,10 +134,7 @@ List* get_adj_nodes(Node* n){
                 {
                     Node* nodo=copy(n);
                     nodo->sudo[i][j]=k;
-                    if(is_valid(nodo))
-                    {
-                        pushBack(list,nodo);
-                    }
+                    if(is_valid(nodo))pushBack(list,nodo);
                     else free(nodo);  
                 }
                 return list;
