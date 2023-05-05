@@ -129,6 +129,27 @@ List* get_adj_nodes(Node* n){
     for (i=0;i < 9;i++)
     {
         for(j=0;j<9;j++)
+        {
+            if (n->sudo[i][j]==0)
+            {
+                for (size_t k=1;k<=9;k++)
+                {
+                    if(is_valid(n))
+                    {
+                        Node* nodo=copy(n);
+                        nodo->sudo[i][j]=k;
+                        pushBack(list,nodo);
+                    }   
+                }
+            }
+        }
+        
+    }
+    
+    /*
+    for (i=0;i < 9;i++)
+    {
+        for(j=0;j<9;j++)
             if(n->sudo[i][j] == 0)break;
         if(n->sudo[i][j] == 0)break; 
     }
@@ -141,8 +162,9 @@ List* get_adj_nodes(Node* n){
             pushBack(list,nodo);
         }
             
-    }
+    }*/
     return list;
+    
 }
 /*4.Implemente la función **int is_final(Node * n)**. Esta función retorna 1 si el nodo corresponde a un nodo final (es decir, todos los valores de la matriz son distintos a 0) y 0 en caso contrario.
 */
