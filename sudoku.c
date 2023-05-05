@@ -132,7 +132,7 @@ List* get_adj_nodes(Node* n){
             if(n->sudo[i][j] == 0)break;
         if(n->sudo[i][j] == 0)break; 
     }
-    for (size_t k=1;k<9;k++)
+    for (size_t k=1;k<=9;k++)
     {
         if(is_valid(n))
         {
