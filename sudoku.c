@@ -183,10 +183,13 @@ Node* DFS(Node* initial, int* cont){
     {
         Node* current=top(pila);
         pop(pila);
+        if(is_final(current)==1)return current;
+        /*
         if (is_final(current)==1)
         {
             return current;
         }
+        */
         List* lista=get_adj_nodes(current);
         Node* primero=first(lista);
         while(primero!=NULL)
