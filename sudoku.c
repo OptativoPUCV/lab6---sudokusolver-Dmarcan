@@ -180,8 +180,12 @@ Almacene en la variable cont, la cantidad de iteraciones que realiza el algoritm
 */
 
 Node* DFS(Node* initial, int* cont){
+    
+
+
+    
     Stack* pila=createStack();
-    push(pila,initial);
+    //push(pila,initial);
     while(top(pila)!=NULL)
     {
         Node* current=top(pila);
@@ -212,6 +216,7 @@ Node* DFS(Node* initial, int* cont){
         free(current);
         (*cont)++;
     }
+    
     return NULL;
 }
 
