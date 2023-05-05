@@ -154,18 +154,6 @@ int is_final(Node* n){
             if (n->sudo[i][j]==0)return 0;
         }
     }
-    /*
-    for (int i = 0;i < 9;i++)
-    { 
-        printf("1for\n");
-        for (int j = 0;j < 0;j++)
-        {
-            printf("2for\n");
-            
-            if (n->sudo[i][j]==0)return 0;
-        }     
-    }
-    */
     return 1;
 }
 /*5..Implemente la función Node* DFS(Node* n, int* cont). Esta función realiza una búsqueda en profundidad a partir del nodo n. El algoritmo es el siguiente:
@@ -195,7 +183,7 @@ Node* DFS(Node* initial, int* cont){
     {
         Node* current=top(pila);
         pop(pila);
-        if (is_final(current))
+        if (is_final(current)==1)
         {
             return current;
         }
