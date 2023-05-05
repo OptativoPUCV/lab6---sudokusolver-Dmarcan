@@ -129,7 +129,6 @@ List* get_adj_nodes(Node* n){
     {
         for(j=0;j<9;j++)
         {
-            printf("%zd %zd\n",i,j);
             if (n->sudo[i][j]==0)
             {
                 for (size_t k=1;k<=9;k++)
