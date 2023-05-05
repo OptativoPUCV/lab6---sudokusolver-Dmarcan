@@ -124,7 +124,7 @@ Recuerde que los nodos adyacentes son generados aplicando las acciones al estado
 List* get_adj_nodes(Node* n){
     List* list=createList();
     size_t i,j;
-    /*
+    
     for (i=0;i < 9;i++)
     {
         for(j=0;j<9;j++)
@@ -147,11 +147,10 @@ List* get_adj_nodes(Node* n){
         }
         
     }
-    */
     
+    /*
     for (i=0;i < 9;i++)
     {
-        //printf("%zd %zd\n",i,j);
         for(j=0;j<9;j++)
             if(n->sudo[i][j] == 0)break;
         if(n->sudo[i][j] == 0)break; 
@@ -162,15 +161,13 @@ List* get_adj_nodes(Node* n){
         nodo->sudo[i][j]=k;
         if(is_valid(nodo))
         {
-            //Node* nodo=copy(n);
-            //nodo->sudo[i][j]=k;
             pushBack(list,nodo);
         }
         else free(nodo);
             
     }
     return list;
-    
+    */
 }
 /*4.Implemente la función **int is_final(Node * n)**. Esta función retorna 1 si el nodo corresponde a un nodo final (es decir, todos los valores de la matriz son distintos a 0) y 0 en caso contrario.
 */
