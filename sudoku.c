@@ -185,6 +185,7 @@ Node* DFS(Node* initial, int* cont){
         pop(pila);
         if(is_final(current)==1)
         {
+            printf("lol\n");
             return current;
         }
         List* lista=get_adj_nodes(current);
