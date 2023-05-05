@@ -150,11 +150,8 @@ int is_final(Node* n){
 
     for (int i = 0;i < 9;i++)
     { 
-        printf("1for\n");
         for (int j = 0;j < 0;j++)
         {
-            //printf("fasf");
-            printf("2for\n");
             if (n->sudo[i][j]==0)return 0;
         }     
     }
@@ -163,11 +160,8 @@ int is_final(Node* n){
     {
         for (size_t j=0;j<9;j++)
         {
-            //printf("%i",n->sudo[i][j]);
-            //printf("\n");
             if (n->sudo[i][j]==0)return 0;
         }
-        //printf("\n");
     }
     */
     return 1;
