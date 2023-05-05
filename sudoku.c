@@ -147,15 +147,6 @@ List* get_adj_nodes(Node* n){
 /*4.Implemente la función **int is_final(Node * n)**. Esta función retorna 1 si el nodo corresponde a un nodo final (es decir, todos los valores de la matriz son distintos a 0) y 0 en caso contrario.
 */
 int is_final(Node* n){
-
-    for (int i = 0;i < 9;i++)
-    { 
-        for (int j = 0;j < 1;j++)
-        {
-            if (n->sudo[i][j]==0)return 0;
-        }     
-    }
-    /*
     for (size_t i=0;i<9;i++)
     {
         for (size_t j=0;j<9;j++)
@@ -163,7 +154,6 @@ int is_final(Node* n){
             if (n->sudo[i][j]==0)return 0;
         }
     }
-    */
     return 1;
 }
 /*5..Implemente la función Node* DFS(Node* n, int* cont). Esta función realiza una búsqueda en profundidad a partir del nodo n. El algoritmo es el siguiente:
