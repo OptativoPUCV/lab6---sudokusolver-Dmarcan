@@ -137,9 +137,11 @@ List* get_adj_nodes(Node* n){
                     if(is_valid(nodo))pushBack(list,nodo);
                     else free(nodo);  
                 }
-                return list;
+                //return list;
+                break;
             }
         }
+        if (n->sudo[i][j]==0)break;
         
     }
     return list;
