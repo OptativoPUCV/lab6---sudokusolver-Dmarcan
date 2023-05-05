@@ -191,7 +191,7 @@ Node* DFS(Node* initial, int* cont){
     while(top(pila)!=NULL)
     {
         Node* current=top(pila);
-        /*
+        
         for (size_t i=0;i<9;i++)
         {
             for (size_t j=0;j<9;j++)
@@ -202,7 +202,7 @@ Node* DFS(Node* initial, int* cont){
             printf("\n");
         }
         printf("%i\n",*cont);
-        */
+        
         pop(pila);
         
         if(is_final(current)==1)
