@@ -147,23 +147,6 @@ List* get_adj_nodes(Node* n){
         }
         
     }
-    /*
-    for (i=0;i < 9;i++)
-    {
-        for(j=0;j<9;j++)
-            if(n->sudo[i][j] == 0)break;
-        if(n->sudo[i][j] == 0)break; 
-    }
-    for (size_t k=1;k<9;k++)
-    {
-        Node* nodo=copy(n);
-        nodo->sudo[i][j]=k;
-        if(is_valid(nodo))
-        {
-            pushBack(list,nodo);
-        }
-        else free(nodo); 
-    }*/
     return list;
     
 }
