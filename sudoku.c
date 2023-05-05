@@ -211,12 +211,10 @@ Node* DFS(Node* initial, int* cont){
         {
             return current;
         }
-        List* listaa=get_adj_nodes(current);
-        for(Node*  primero=first(listaa);primero!=NULL;primero=next(listaa))
-        {
+        List* lista=get_adj_nodes(current);
+        for(Node*  primero=first(lista);primero!=NULL;primero=next(lista))
             push(pila,primero);
             
-        }
         /*
         Node* primero=first(lista);
         while(primero!=NULL)
@@ -225,7 +223,6 @@ Node* DFS(Node* initial, int* cont){
             primero=next(lista);
         }
         */
-        clean(listaa);
         free(current);
         (*cont)++;
     }
