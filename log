@@ -868,3 +868,13 @@ sudoku.c:183:39: error: subscripted value is neither array nor pointer nor vecto
       |                                       ^
 Compilation failed
 bf599bc
+Fri 05 May 2023 01:07:53 PM UTC: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:184:39: error: subscripted value is neither array nor pointer nor vector
+  184 |                 printf("%i",initial[i][j]);
+      |                                       ^
+Compilation failed
+059e8e7
