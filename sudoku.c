@@ -124,7 +124,7 @@ Recuerde que los nodos adyacentes son generados aplicando las acciones al estado
 List* get_adj_nodes(Node* n){
     List* list=createList();
     size_t i,j;
-    /*
+    
     for (i=0;i < 9;i++)
     {
         for(j=0;j<9;j++)
@@ -137,15 +137,21 @@ List* get_adj_nodes(Node* n){
                     {
                         Node* nodo=copy(n);
                         nodo->sudo[i][j]=k;
-                        pushBack(list,nodo);
+                        if(is_valid(n))
+                        {
+                            //Node* nodo=copy(n);
+                            //nodo->sudo[i][j]=k;
+                            pushBack(list,nodo);
+                        }
+                        else free(nodo);
                     }   
                 }
             }
         }
         
     }
-    */
     
+    /*
     for (i=0;i < 9;i++)
     {
         //printf("%zd %zd\n",i,j);
@@ -165,7 +171,7 @@ List* get_adj_nodes(Node* n){
         }
         else free(nodo);
             
-    }
+    }*/
     return list;
     
 }
