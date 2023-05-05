@@ -186,6 +186,7 @@ Node* DFS(Node* initial, int* cont){
             }
             printf("\n");
         }
+    printf("gsjadn");
     Stack* pila=createStack();
     push(pila,initial);
     while(top(pila)!=NULL)
