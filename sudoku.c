@@ -143,6 +143,7 @@ List* get_adj_nodes(Node* n){
                     }
                     else free(nodo);  
                 }
+                return list;
             }
         }
         
@@ -165,9 +166,9 @@ List* get_adj_nodes(Node* n){
         }
         else free(nodo);
             
-    }
+    }*/
     return list;
-    */
+    
 }
 /*4.Implemente la función **int is_final(Node * n)**. Esta función retorna 1 si el nodo corresponde a un nodo final (es decir, todos los valores de la matriz son distintos a 0) y 0 en caso contrario.
 */
