@@ -143,7 +143,7 @@ List* get_adj_nodes(Node* n){
                     }
                     else free(nodo);  
                 }
-                return list;
+                //return list;
             }
         }
         
