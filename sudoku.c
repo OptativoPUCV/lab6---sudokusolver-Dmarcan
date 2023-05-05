@@ -181,7 +181,7 @@ Node* DFS(Node* initial, int* cont){
             for (size_t j=0;j<9;j++)
             {
                 //printf("%i",initial[i][j]);
-                printf("%i",initial[i][j]);
+                printf("%i",initial->sudo[i][j]);
                 
             }
             printf("\n");
