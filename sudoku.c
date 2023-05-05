@@ -148,9 +148,9 @@ List* get_adj_nodes(Node* n){
 */
 int is_final(Node* n){
     printf("%i",n->sudo[0][0]);
-    for (int i=0;i<9;i++)
+    for (size_t i=0;i<9;i++)
     { 
-        for (int j=0;j<0;j++)
+        for (size_t j=0;j<0;j++)
         {
             printf("fasf");
             if (n->sudo[i][j]==0)return 0;
