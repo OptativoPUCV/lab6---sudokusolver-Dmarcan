@@ -176,7 +176,15 @@ Almacene en la variable cont, la cantidad de iteraciones que realiza el algoritm
 */
 
 Node* DFS(Node* initial, int* cont){
-    
+    for (size_t i=0;i<9;i++)
+        {
+            for (size_t j=0;j<9;j++)
+            {
+                printf("%i",initial[i][j]);
+                
+            }
+            printf("\n");
+        }
     Stack* pila=createStack();
     push(pila,initial);
     while(top(pila)!=NULL)
@@ -195,6 +203,7 @@ Node* DFS(Node* initial, int* cont){
         printf("%i\n",*cont);
         */
         pop(pila);
+        
         if(is_final(current)==1)
         {
             return current;

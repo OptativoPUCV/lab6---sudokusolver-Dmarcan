@@ -858,3 +858,13 @@ Fri 05 May 2023 01:02:15 PM UTC:
  tests:  7|1
 total_score: 55/70
 9dabb58
+Fri 05 May 2023 01:05:37 PM UTC: 
+ sudoku.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:183:39: error: subscripted value is neither array nor pointer nor vector
+  183 |                 printf("%i",initial[i][j]);
+      |                                       ^
+Compilation failed
+bf599bc
