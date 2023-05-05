@@ -189,11 +189,10 @@ Node* DFS(Node* initial, int* cont){
         while(primero!=NULL)
         {
             push(pila,primero);
-            (*cont)++;
             primero=next(lista);
         }
         free(current);
-        //(*cont)++;
+        (*cont)++;
     }
     return NULL;
 }
